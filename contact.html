@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6007253245.js" crossorigin="anonymous"></script></head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="../images/paperplane(white).png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="whereto.html">WHERE TO?</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+        <h1>Contact Us</h1>
+
+    </section>
+
+    <!--Contact Us-->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.944825793192!2d103.83286790355388!3d1.2816764268898972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da197a52a7e699%3A0xc041ade54980faa5!2sCreamier%20Handcrafted%20Ice%20Cream%20and%20Coffee%20(Tiong%20Bahru)!5e0!3m2!1sen!2ssg!4v1700446623227!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Singapore 147284</p>
+                    </span>
+                </div>
+            
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+65 8230 XXXX</h5>
+                        <p>Monday - Friday, 10am - 7pm</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@traveltheworld.com</h5>
+                        <p>Email us your queries</p>
+                    </span>
+                </div>
+
+            </div>
+        
+
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your Subject" required>
+                <input type="text" name="subject" placeholder="Enter your name" required>
+                <textarea rows="8" name="message" required></textarea>
+                <button type="submit" class="link-btn">Send Message</button>
+
+            </form>
+
+    </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, necessitatibus. <br> At quis qui non, quae recusandae beatae odio eaque id voluptate provident alias, quos officiis repudiandae et. Hic, maxime excepturi?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            
+
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Javen</p>
+    </section>
+
+    <!--Javascript for toggle menu-->
+
+    <script>
+        const navLinks = document.querySelector("#navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+</html>

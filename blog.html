@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6007253245.js" crossorigin="anonymous"></script></head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="../images/paperplane(white).png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="whereto.html">WHERE TO?</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+        <h1>Blog</h1>
+
+    </section>
+
+    <!--blog page content-->
+
+    <section class="blog-content">
+
+        <div class="row">
+
+            <div class="blog-left">
+                <img src="../images/menu.jpg">
+                <h2> Our Itineraries Catered For Each Individual</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores at vel libero eaque consequuntur, cumque aspernatur totam in dicta alias exercitationem deleniti? Eius omnis eos laboriosam quae, minus sed totam! lorem</p> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, omnis natus vitae harum dignissimos culpa odio reiciendis exercitationem magni rem nam, voluptatum sequi alias tempore quod quidem blanditiis nulla magnam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, culpa! Expedita ducimus voluptates dolor, explicabo dolore nihil modi eveniet repudiandae sapiente sed. Amet quis aliquam error fuga alias voluptatibus minima!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, maiores. Velit corporis veritatis error impedit ratione harum quis reiciendis eaque nisi illum nulla iusto, possimus quasi deleniti nemo, dolores voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam neque incidunt consequatur nesciunt provident saepe debitis non in ratione. Voluptatum optio blanditiis voluptas, unde molestiae omnis reiciendis earum atque impedit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt optio perferendis maiores aliquam in, velit voluptates porro perspiciatis vel consequatur autem quo dolorem alias! Molestias fuga quaerat quas quam perspiciatis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo asperiores suscipit quibusdam dolore eum illum accusantium veritatis vero. Maxime quis voluptatibus dignissimos repellat ratione ab, velit inventore perspiciatis repellendus sit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, quo obcaecati. Voluptatum fugiat aut pariatur tempora sint vero ratione? Consequatur possimus adipisci consectetur blanditiis, asperiores eligendi pariatur nisi quasi incidunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatem recusandae dolore delectus quasi eos excepturi nemo eius saepe accusantium eaque laudantium modi, et tempora voluptatum aliquam nisi exercitationem. Quo!</p>
+            
+                <div class="comment-box">
+
+                    <h3>Leave a Comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="text" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="You comment"></textarea>
+                        <button type="submit" class="link-btn">POST COMMENT</button>
+
+                    </form>
+                </div>
+            
+            </div>
+
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Taiwan</span>
+                    <span>21</span>
+                </div>
+
+                <div>
+                    <span>Japan</span>
+                    <span>28</span>
+                </div>
+
+                <div>
+                    <span>Korea</span>
+                    <span>22</span>
+                </div>
+
+                <div>
+                    <span>Singapore</span>
+                    <span>15</span>
+                </div>
+
+                <div>
+                    <span>Australia</span>
+                    <span>19</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, necessitatibus. <br> At quis qui non, quae recusandae beatae odio eaque id voluptate provident alias, quos officiis repudiandae et. Hic, maxime excepturi?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            
+
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Javen</p>
+    </section>
+
+    <!--Javascript for toggle menu-->
+
+    <script>
+        const navLinks = document.querySelector("#navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6007253245.js" crossorigin="anonymous"></script></head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="../images/paperplane(white).png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="whereto.html">WHERE TO?</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+        <h1>About Us</h1>
+
+    </section> 
+
+
+    <!--about us content-->
+    <section class="about-us">
+        
+        <div class="row">
+            <div class="about-col">
+                <h1>Letting You Seeing the World Through Our Eyes </h1>
+
+                <p>Welcome to Scenic World, where we invite you to embark on a journey of breathtaking beauty and unique perspectives. Our passion is to share the world's wonders through our lens, providing you with an immersive experience that goes beyond ordinary travel.
+                    As avid explorers and storytellers, we believe in the power of visuals to transport you to different corners of the globe. Each photograph and story we share is a testament to the diversity, magnificence, and serenity that our world has to offer. 
+                    Our team is dedicated to capturing the essence of every destination, 
+                    from the golden hues of a sunset over the horizon to the rhythmic dance of waves in serene oceans. We aim to inspire you to perceive the world from our perspective, sparking your curiosity and igniting your wanderlust
+                    Join us on this visual odyssey as we strive to redefine the way you see and experience the beauty that surrounds us. Whether you are a seasoned traveler or an armchair explorer, Scenic World is your window to a world of wonders</p>
+
+                <a href="" class="link-btn">SIGN UP NOW!</a>    
+            </div>            
+
+            <div class="about-col">
+                <img src="../images/consumer3.jpg" alt="">
+            </div>
+
+        </div>
+
+        
+    </section>
+
+    <!-- Add your footer or other sections here --></p>
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, necessitatibus. <br> At quis qui non, quae recusandae beatae odio eaque id voluptate provident alias, quos officiis repudiandae et. Hic, maxime excepturi?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            
+
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Javen</p>
+    </section>
+
+    <!--Javascript for toggle menu-->
+
+    <script>
+        const navLinks = document.querySelector("#navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+</html>
